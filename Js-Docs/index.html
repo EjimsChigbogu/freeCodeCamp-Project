@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Js Docs</title>
+  </head>
+  <body>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            JavaScript often abbreviated as JS, is a programming language that
+            conforms to the ECMAScript specification.JavaScript is high-level,
+            often just-in-time compiled, and multi-paradigm. It has
+            curly-bracket syntax, dynamic typing, prototype-based
+            object-orientation, and first-class functions.
+          </p>
+
+          <p>
+            Alongside HTML and CSS, JavaScript is one of the core technologies
+            of the World Wide Web. Over 97% of websites use it client-side for
+            web page behavior, often incorporating third-party libraries. Most
+            web browsers have a dedicated JavaScript engine to execute the code
+            on the user's device. As a multi-paradigm language, JavaScript
+            supports event-driven, functional, and imperative programming
+            styles. It has application programming interfaces (APIs) for working
+            with text, dates, regular expressions, standard data structures, and
+            the Document Object Model (DOM).
+          </p>
+          <h3>Java and JavaScript differences</h3>
+          <p>Here are some of the differences between the two languages.</p>
+          <div class="compare_java_js">
+            <ul>
+              <li>
+                Java is strongly typed language and variable must be declare
+                first to use in program.In Java the type of a variable is
+                checked at compile-time.
+              </li>
+              <li>
+                Java is an object oriented programming language.
+              </li>
+              <li>
+                Java applications can run in any virtual machine(JVM) or
+                browser.
+              </li>
+              <li>
+                Java program has file extension “.Java” and translates source
+                code into bytecodes which is executed by JVM(Java Virtual
+                Machine).
+              </li>
+            </ul>
+            <ul>
+              <li>
+                JavaScript is weakly typed language and have more relaxed syntax
+                and rules.
+              </li>
+              <li>
+                JavaScript is an object based scripting language.
+              </li>
+              <li>
+                JavaScript code used to run only in browser, but now it can run
+                on server via Node.js.
+              </li>
+              <li>
+                JavaScript file has file extension “.js” and it is interpreted
+                but not compiled,every browser has the Javascript interpreter to
+                execute JS code.
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section class="main-section" id="Why-Study-JavaScript?">
+        <header>Why Study JavaScript?</header>
+        <article>
+          <p>
+            JavaScript is one of the 3 languages all web developers must learn:
+          </p>
+          <ol>
+            <li><strong>HTML</strong> to define the content of web pages</li>
+            <li><strong>Css</strong> to specify the layout of web pages</li>
+            <li>
+              <strong>JavaScript</strong> to program the behavior of web pages
+            </li>
+          </ol>
+        </article>
+      </section>
+      <section class="main-section" id="Statements-and-Code-Blocks">
+        <header>Js Statements and Code blocks</header>
+        <article>
+          JavaScript statements can be grouped together in code blocks, inside
+          curly brackets {...}. <br />
+          The purpose of code blocks is to define statements to be executed
+          together. <br />
+          One place you will find statements grouped together in blocks, is in
+          JavaScript functions:
+          <code
+            >function myFunction() { document.getElementById("demo1").innerHTML
+            = "Hello Dolly!"; document.getElementById("demo2").innerHTML = "How
+            are you?"; }
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables and Declaration</header>
+        <p>
+          In javascript there are 3 ways to declare a JavaScript variable:
+        </p>
+        <ol>
+          <li>
+            Using <span class="code-span">var</span>, this syntax can also be
+            used to declear global and local variebles.
+          </li>
+          <li>
+            Using <span class="code-span">let</span>, this is used to declear
+            Global variebles.
+          </li>
+          <li>
+            Using <span class="code-span">const</span><br />
+            You can create a read-only, named constant with the const keyword.
+            <br />
+            The syntax of a constant identifier is the same as for a variable
+            identifier: <br />
+            it must start with a letter, underscore or dollar sign and can
+            contain alphabetic, numeric, or underscore characters.
+          </li>
+        </ol>
+        <p>
+          Variables are containers for storing data (values). <br />
+          In this example, <span class="code-span">x,</span>
+          <span class="code-span">y,</span> and
+          <span class="code-span">z,</span> are variables, declared with the
+          <span class="code-span">var</span>,
+          <span class="code-span">let</span>,
+          <span class="code-span">const</span>
+          keyword:
+        </p>
+        <code>
+          //using var var x = 5; var y = 6; var z = x + y; //using let let x =
+          5; let y = 6; let z = x + y; //using const const x = 5; const y = 6;
+          const z = x + y;
+        </code>
+        <p>From the example above, you can expect:</p>
+        <ul>
+          <li><span class="code-span">x</span> stores the value of 5</li>
+          <li><span class="code-span">y</span> stores the value of 6</li>
+          <li>
+            <span class="code-span">z</span> stores the value of 11 respectively
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="Variable_scope">
+        <header>Variable scope</header>
+        <article>
+          <p>
+            When you declare a variable outside of any function, it is called a
+            global variable, because it is available to any other code in the
+            current document. When you declare a variable within a function, it
+            is called a local variable, because it is available only within that
+            function.
+          </p>
+
+          <p>
+            JavaScript before ECMAScript 2015 does not have block statement
+            scope; rather, a variable declared within a block is local to the
+            function (or global scope) that the block resides within. For
+            example the following code will log 5, because the scope of x is the
+            function (or global context) within which x is declared, not the
+            block, which in this case is an if statement.
+          </p>
+          <code>if (true) { var x = 5; } console.log(x); // 5</code>
+          <p>
+            This behavior changes, when using the let declaration introduced in
+            ECMAScript 2015.
+          </p>
+
+          <code
+            >if (true) { let y = 5; } console.log(y); // ReferenceError: y is
+            not defined</code
+          >
+        </article>
+      </section>
+      <section class="main-section" id="Global_variables">
+        <header>Global variables</header>
+        <article>
+          <p>
+            Global variables are in fact properties of the global object. In web
+            pages the global object is window, so you can set and access global
+            variables using the window.variable syntax.
+          </p>
+
+          <p>
+            Consequently, you can access global variables declared in one window
+            or frame from another window or frame by specifying the window or
+            frame name. For example, if a variable called phoneNumber is
+            declared in a document, you can refer to this variable from an
+            iframe as parent.phoneNumber.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Data_types">
+        <header>Data types</header>
+        <article>
+          <p>The latest ECMAScript standard defines seven data types:</p>
+          <ul>
+            <li>
+              <p>Six data types that are primitives:</p>
+              <ul>
+                <li><span class="code-span">boolean</span>. true and false.</li>
+                <li>
+                  <span class="code-span">null</span>. A special keyword
+                  denoting a null value. Because JavaScript is case-sensitive,
+                  null is not the same as Null, NULL, or any other variant.
+                </li>
+                <li>
+                  <span class="code-span">undefined</span>. A top-level property
+                  whose value is undefined.
+                </li>
+                <li><span class="code-span">number</span>. 42 or 3.14159.</li>
+                <li><span class="code-span">string</span>. "Howdy"</li>
+                <li>
+                  <span class="code-span">symbol</span> (new in ECMAScript
+                  2015). A data type whose instances are unique and immutable.
+                </li>
+              </ul>
+            </li>
+
+            <li>and <span class="code-span">object.</span></li>
+          </ul>
+          Although these data types are a relatively small amount, they enable
+          you to perform useful functions with your applications. Objects and
+          functions are the other fundamental elements in the language. You can
+          think of objects as named containers for values, and functions as
+          procedures that your application can perform.
+        </article>
+      </section>
+      <section class="main-section" id="Function_declarations">
+        <header>Function</header>
+        <article>
+          A <span class="code-span">function</span> definition (also called a
+          function declaration, or function statement) consists of the function
+          keyword, followed by:
+
+          <ul>
+            <li>The name of the <span class="code-span">function</span>.</li>
+            <li>
+              A list of arguments to the function, enclosed in
+              <span class="code-span">parenthesis</span> and separated by
+              <span class="code-span">commas</span>.
+            </li>
+            <li>
+              The JavaScript statements that define the function, enclosed in
+              curly brackets, <span class="code-span">{ }</span>.
+            </li>
+          </ul>
+          <p>
+            For example, the following code defines a simple function named add:
+          </p>
+
+          <code>function add(number) { return number + number; }</code>
+          <p>
+            The function add takes one argument, called number. The function
+            consists of one statement that says to return the argument of the
+            function (that is, number) added to itself. The return statement
+            specifies the value returned by the function.
+          </p>
+          <code>return number + number;</code>
+          <p>
+            Primitive parameters (such as a number) are passed to functions by
+            value; the value is passed to the function, but if the function
+            changes the value of the parameter, this change is not reflected
+            globally or in the calling function.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              You can learn more about javascript on
+              <a href="https://www.w3schools.com/js/default.asp" target="_blank"
+                >W3schools</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <nav id="navbar">
+      <header><i class="fab fa-js"></i> Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#Why-Study-JavaScript?"
+            >Why Study JavaScript?</a
+          >
+        </li>
+
+        <li>
+          <a class="nav-link" href="#Statements-and-Code-Blocks"
+            >Js Statements and Code blocks</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Variables">Variables and Declaration</a>
+        </li>
+        <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+        <li>
+          <a class="nav-link" href="#Global_variables">Global variables</a>
+        </li>
+        <li><a class="nav-link" href="#Data_types">Data types</a></li>
+        <li>
+          <a class="nav-link" href="#Function_declarations"
+            >Function declarations</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Reference">Learn more on W3schools</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
